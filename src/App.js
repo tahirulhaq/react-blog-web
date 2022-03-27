@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 import { useState } from 'react';
 import {signOut} from 'firebase/auth' 
 import {auth} from './firebase-config'
+import EditPost from './pages/EditPost';
  
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home isAuth={isAuth}/>} />
         <Route path='/createpost' element={<CreatePost isAuth={isAuth}/>} />
+        <Route path='/editpost/:id' element= {<EditPost isAuth={isAuth}/>}/>
         <Route path='/login' element={<Login setIsAuth={setIsAuth}/>} />
       </Routes>
     </Router>

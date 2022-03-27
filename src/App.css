@@ -166,10 +166,10 @@ textarea {
 }
 
 .postHeader .title {
-  flex: 50%;
+  flex: 70%;
 }
 .postHeader .deletePost {
-  flex: 50%;
+  flex: 15%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
